@@ -81,6 +81,10 @@ describe("number adder"{
 
 Take a look at `login.js` and you'll see a very similar structure.
 
+## Running tests
+
+To run your tests, just navigate to the root project folder and run `$ mocha`. It's that easy!
+
 ## Help!
 
 If you got stuck, or something doesn't make sense, don't worry! Just shoot an email to info@crossbrowsertesting.com and we'll help you out.
