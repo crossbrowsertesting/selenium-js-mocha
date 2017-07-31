@@ -8,7 +8,7 @@ var remoteHub = 'http://hub.crossbrowsertesting.com:80/wd/hub';
 var username = 'you@yourdomain.com'; // replace with your email address 
 var authkey = 'yourauthkey'; // replace with your authkey 
 
-var api_names = [['Chrome54', 'Win10', 'chrome'], ['FF46', 'Win10', 'firefox'], ['Safari9', 'Mac10.11', 'safari']];
+var api_names = [['chrome-latest', 'Win10', 'chrome'], ['ff-latest', 'Win10', 'firefox'], ['IE11', 'Win10', 'internet explorer']];
 
 api_names.forEach(function(api) {
     describe("Login form", function(){

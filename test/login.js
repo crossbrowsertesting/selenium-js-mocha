@@ -10,8 +10,8 @@ var authkey = 'secretauthkey'; // replace with your authkey
 var caps = {
     name : 'Login',
     build :  '1.0.0',
-    browser_api_name : 'IE10', 
-    os_api_name : 'Win7x64-C2', 
+    browser_api_name : 'chrome-latest',                 // request the latest version of chrome 
+    os_api_name : 'Win10', 
     screen_resolution : '1024x768',
     record_video : 'true',
     record_network : 'true',
