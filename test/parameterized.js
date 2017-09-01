@@ -8,7 +8,7 @@ var remoteHub = 'http://hub.crossbrowsertesting.com:80/wd/hub';
 var username = 'you@yourdomain.com'; // replace with your email address 
 var authkey = 'yourauthkey'; // replace with your authkey 
 
-var api_names = [['chrome-latest', 'Win10', 'chrome'], ['ff-latest', 'Win10', 'firefox'], ['IE11', 'Win10', 'internet explorer']];
+var api_names = [['Chrome', 'Windows 10'], ['Firefox', 'Windows 10'], ['Internet Explorer', 'Windows 10']];
 
 api_names.forEach(function(api) {
     describe("Login form", function(){
@@ -18,12 +18,11 @@ api_names.forEach(function(api) {
         var caps = {
             name : 'Login',
             build :  '1.0.0',
-            browser_api_name : api[0], 
-            os_api_name : api[1], 
+            browserName : api[0], 
+            platform : api[1], 
             screen_resolution : '1024x768',
             record_video : 'true',
             record_network : 'true',
-            browserName : api[2], // <---- this needs to be the browser type in lower case: firefox, internet explorer, chrome, opera, or safari
             username : username,
             password : authkey
         };
