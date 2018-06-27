@@ -4,8 +4,8 @@ var assert = require('chai').assert;
 
 var remoteHub = 'http://hub.crossbrowsertesting.com:80/wd/hub';
 
-var username = 'johnr@crossbrowsertesting.com'; // replace with your email address 
-var authkey = 'secretauthkey'; // replace with your authkey 
+var username = 'EMAIL_ADDRESS'; // replace with your email address 
+var authkey = 'AUTH_KEY'; // replace with your authkey 
  
 var caps = {
     name : 'Login',
