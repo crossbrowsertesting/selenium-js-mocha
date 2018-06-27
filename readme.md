@@ -1,4 +1,4 @@
-<img src="https://crossbrowsertesting.com/design/images/cbt-sb_logo.svg" width="50%">
+<img src="https://crossbrowsertesting.com/design/images/brand/cbt-sb-logo.svg" width="400px">
 ----
 # Mocha and CBT
 
