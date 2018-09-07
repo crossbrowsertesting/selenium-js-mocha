@@ -1,12 +1,16 @@
 <img src="https://crossbrowsertesting.com/design/images/brand/cbt-sb-logo.svg" width="400px">
-----
+
+* [Install and Setup](#install-and-setup)
+* [Writing Tests](#writing-tests)
+* [Running Tests](#running-tests)
+
 # Mocha and CBT
 
-[**Mocha**](http://mochajs.org/) is a powerful and easy to use testing framework for Node.js. Its power comes from its flexibility. With support for all the popular test writing styles (BDD, TDD, Exports, QUnit or Require) and seemingly endless ways to output test results, it's no wonder Mocha has a [**94% satisfaction rating**](http://stateofjs.com/2016/testing/) among those who have used it.
+[**Mocha**](http://mochajs.org/) is a powerful and easy-to-use testing framework for Node.js. Its power comes from its flexibility. With support for all the popular test writing styles (BDD, TDD, Exports, QUnit or Require) and seemingly endless ways to output test results, it's no wonder Mocha has a [**94% satisfaction rating**](http://stateofjs.com/2016/testing/) among those who have used it.
 
 ## Install and Setup
 
-Unlike other frameworks, it's dead simple to get started with Mocha. 
+Unlike other frameworks, it's dead simple to get started with Mocha. If you don't have npm, you can get it [**here**](https://nodejs.org/en/).
 
 To install Mocha globally:
 ```
@@ -40,7 +44,7 @@ $ npm install --save-dev chai
 
 For this example we'll be testing a simple [login page](https://crossbrowsertesting.github.io/login-form.html) to make sure that it rejects bad login attempts, and accepts good login attempts.
 
-Definitely take a look at the example test in this repo! It's heavily commented, so hopefully it's easy to read and understand. 
+Definitely take a look at the example test in this repo! It's heavily commented, so that it's easy to read and understand. 
 
 The basic structure of each test is as follows:
 
