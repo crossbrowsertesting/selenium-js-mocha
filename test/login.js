@@ -4,9 +4,9 @@ var assert = require('chai').assert;
 
 var remoteHub = 'http://hub.crossbrowsertesting.com:80/wd/hub';
 
-var username = 'EMAIL_ADDRESS'; // replace with your email address 
-var authkey = 'AUTH_KEY'; // replace with your authkey 
- 
+var username = 'EMAIL_ADDRESS'; // replace with your email address
+var authkey = 'AUTH_KEY'; // replace with your authkey
+
 var caps = {
     name : 'Login',
     build :  '1.0.0',
@@ -14,13 +14,13 @@ var caps = {
     platform : 'Windows 10',                // To specify version, add version: 'desired version'
     screen_resolution : '1024x768',
     record_video : 'true',
-    record_network : 'true',
+    record_network : 'false',
     username : username,
     password : authkey
 };
 
 describe("Login form", function(){
-    
+
     // set the timeout for each test in this block to 5 minutes
     this.timeout(5 * 1000 * 60);
 
@@ -32,10 +32,10 @@ describe("Login form", function(){
 
     // This function runs before each "it" block below
     // Here, it resets the driver back to the correct page.
-    // This is also where we would reset cookies and other browser data we don't want to 
+    // This is also where we would reset cookies and other browser data we don't want to
     // persist between test blocks
     beforeEach(function setupWebdriver(done){
-        driver.get("http://crossbrowsertesting.github.io/login-form.html").then( done ) 
+        driver.get("http://crossbrowsertesting.github.io/login-form.html").then( done )
     });
 
     // Each "it" block describes one test scenario

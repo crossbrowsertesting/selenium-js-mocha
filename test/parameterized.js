@@ -5,24 +5,24 @@ var assert = require('chai').assert;
 
 var remoteHub = 'http://hub.crossbrowsertesting.com:80/wd/hub';
 
-var username = 'you@yourdomain.com'; // replace with your email address 
-var authkey = 'yourauthkey'; // replace with your authkey 
+var username = 'you@yourdomain.com'; // replace with your email address
+var authkey = 'yourauthkey'; // replace with your authkey
 
 var api_names = [['Chrome', 'Windows 10'], ['Firefox', 'Windows 10'], ['Internet Explorer', 'Windows 10']];
 
 api_names.forEach(function(api) {
     describe("Login form", function(){
-        
+
         // set the timeout for each test in this block to 5 minutes
         this.timeout(5 * 1000 * 60);
         var caps = {
             name : 'Login',
             build :  '1.0.0',
-            browserName : api[0], 
-            platform : api[1], 
+            browserName : api[0],
+            platform : api[1],
             screen_resolution : '1024x768',
             record_video : 'true',
-            record_network : 'true',
+            record_network : 'false',
             username : username,
             password : authkey
         };
@@ -36,10 +36,10 @@ api_names.forEach(function(api) {
         //driver.forBrowser('chrome')
         // This function runs before each "it" block below
         // Here, it resets the driver back to the correct page.
-        // This is also where we would reset cookies and other browser data we don't want to 
+        // This is also where we would reset cookies and other browser data we don't want to
         // persist between test blocks
         beforeEach(function setupWebdriver(done){
-            driver.get("http://crossbrowsertesting.github.io/login-form.html").then( done ) 
+            driver.get("http://crossbrowsertesting.github.io/login-form.html").then( done )
         });
 
         // Each "it" block describes one test scenario
